@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Object1",
+  "%Name":"obj_txtCollision",
   "eventList":[],
   "managed":true,
-  "name":"Object1",
+  "name":"obj_txtCollision",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collision",
+    "path":"objects/obj_collision/obj_collision.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_txtCollision",
+    "path":"sprites/spr_txtCollision/spr_txtCollision.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
