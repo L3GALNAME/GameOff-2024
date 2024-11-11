@@ -5,11 +5,11 @@ global.cameraVar[5] = obj_player;
 thing = 0;
 thing2 = 0;
 tick = 0;
-prePos = [0, 0, 0];
+prePos = false;
 walkDir = "D";
 frame = 0;
 sprite = 0;
-move = 1;
+move = true;
 
 sprite_index = spr_player;
 function setFrame(current) {
@@ -17,17 +17,45 @@ function setFrame(current) {
 	var dir = current;
 	//animation speed
 	frame += 5/60;
-	if (x = prePos[0] and y = prePos[1]) { 
+	if (x = xprevious and y = yprevious) { 
 		frame = 1;
-		prePos[2] = 0;
+		prePos = false;
 	} else { 
-		if (prePos[2] = 0) { frame = 0; }
-		prePos[2] = 1;
+		if (!prePos) { frame = 0; }
+		prePos = true;
 	}
 	
-	if (x > prePos[0]) { dir = "R"; } else if (x < prePos[0]) { dir = "L"; }
+	if (x > xprevious) { dir = "R"; } else if (x < xprevious) { dir = "L"; }
 	
-	if (y > prePos[1]) { dir = "D"; } else if (y < prePos[1]) { dir = "U"; }
+	if (y > yprevious) { dir = "D"; } else if (y < yprevious) { dir = "U"; }
 	
-	return dir
+	return dir;
+}
+
+function checkTxt(uwu) {
+	if !instance_exists(obj_txtCollision) { return false; }
+	
+	var yo;
+	
+	//Check for textbox in faced direction
+	switch uwu {
+		case "R":
+		 yo = instance_place(x+10, y, obj_txtCollision);
+		break;
+		case "L":
+		 yo = instance_place(x-10, y, obj_txtCollision);
+		break;
+		case "D":
+		 yo = instance_place(x, y+10, obj_txtCollision);
+		break;
+		case "U":
+		 yo = instance_place(x, y-10, obj_txtCollision);
+		break;
+	}
+	
+	if (yo == noone) {
+		return false;
+	} else {
+		return yo;
+	}
 }

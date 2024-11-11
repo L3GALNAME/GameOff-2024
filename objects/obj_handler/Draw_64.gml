@@ -8,8 +8,8 @@ if thing > 0 {
 
 // Debug
 
-//draw_text(0, 16, global.areaBorder)
-//draw_text(0, 32, string(global.text))
+//draw_text(0, 16, global.text);
+//if instance_exists(obj_typer) { draw_text(0, 32, obj_typer.txtProg); }
 //draw_text(0, 64, global.text[4])
 ////draw_text(0, 48, string(global.textScript))
 //if array_length(global.textScript) > 1 {

@@ -7,6 +7,3 @@ if keyboard_check_pressed(ord("F")) {
 }
 
 tick++
-
-prePos[0] = x
-prePos[1] = y

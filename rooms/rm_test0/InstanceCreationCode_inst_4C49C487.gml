@@ -1,0 +1,1 @@
+typeSay("WHAT the scAlLoP!?", 1, 0, 5);
