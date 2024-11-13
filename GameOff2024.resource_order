@@ -22,6 +22,7 @@
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_cameraArea","order":5,"path":"objects/obj_cameraArea/obj_cameraArea.yy",},
     {"name":"obj_collision","order":2,"path":"objects/obj_collision/obj_collision.yy",},
+    {"name":"obj_gradient","order":7,"path":"objects/obj_gradient/obj_gradient.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_txtCollision","order":3,"path":"objects/obj_txtCollision/obj_txtCollision.yy",},
     {"name":"obj_typer","order":6,"path":"objects/obj_typer/obj_typer.yy",},

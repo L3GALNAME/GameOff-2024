@@ -39,6 +39,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_cameraArea","path":"objects/obj_cameraArea/obj_cameraArea.yy",},},
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
+    {"id":{"name":"obj_gradient","path":"objects/obj_gradient/obj_gradient.yy",},},
     {"id":{"name":"obj_handler","path":"objects/obj_handler/obj_handler.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_txtCollision","path":"objects/obj_txtCollision/obj_txtCollision.yy",},},
