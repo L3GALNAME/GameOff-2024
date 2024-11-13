@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //// Scrolling Background (test purposes)
-if (room = rm_test0 or room = rm_test0) {
+if (room = rm_test0 or room = rm_house) {
 	var cameraX = camera_get_view_x(global.camera);
 	var cameraY = camera_get_view_y(global.camera);
 	cameraY -= 130;
@@ -22,4 +22,5 @@ thing += 2;
 //walkDir = setFrame(walkDir);
 sprite = asset_get_index("spr_player");
 //sprite = asset_get_index("spr_arachnisWalk"+walkDir)
-draw_sprite_ext(sprite, frame, x, y, 1, 1, 0, c_white, 1)
+draw_sprite_ext(sprite, frame, x, y, 1, 1, 0, c_white, 1);
+draw_sprite(spr_feetEffect, frame % 2, x, y);

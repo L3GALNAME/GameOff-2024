@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_collision",
   "bboxMode":0,
-  "bbox_bottom":15,
+  "bbox_bottom":19,
   "bbox_left":0,
-  "bbox_right":15,
+  "bbox_right":19,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":16,
+  "height":20,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6e5d35b6-0735-47b2-ae2f-448783474f4c","blendMode":0,"displayName":"default","isLocked":false,"name":"6e5d35b6-0735-47b2-ae2f-448783474f4c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"System",
+    "path":"folders/Sprites/System.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":20,
 }

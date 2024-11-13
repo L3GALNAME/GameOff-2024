@@ -85,16 +85,48 @@ thing = 0;
 global.textScript = array_create(0);
 global.text = array_create(0);
 ///textbox on
-global.text[0] = 0;
+global.text[0] = false;
 ///box type
-global.text[1] = 0;
+global.text[1] = false;
 global.text[2] = 0;
 ///character focus
-global.text[3] = 0;
+global.text[3] = array_create(0);
 ///text lines	
 global.text[4] = 0;
 
-room = rm_test0;
-global.startPos = [64, 64];
+room = rm_house;
+global.startPos = [100, 100];
 
-surface_resize(application_surface, 320, 180)
+//surface_resize(application_surface, 320, 180)
+
+//Text drawing
+////ALL FONT CHARACTERS IN ORDER DO NOT TOUCH
+#macro soup " !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\""
+////
+
+function draw_txt(_x, _y, str) {
+	var xx = _x;
+	var yy = _y;
+	var char = "";
+	var char2 = "";
+	
+	//var strLen = string_length(str);
+	for(var i=0; i<string_length(str); i++) {
+		char = string_char_at(str, i+1);
+		//special character check
+		if char = "`" {
+			char = "";
+			char2 = string_char_at(str, i+2);
+			switch char2 {
+				case "n":
+					xx = _x;
+					yy += 16;
+					i++;
+					continue;
+			}
+		}
+		//draw letter and change variables
+		draw_sprite_ext(spr_font, string_pos(char, soup)-1, xx, yy, 1, 1, 0, c_white, 1);
+		xx += 8;
+	}
+}
