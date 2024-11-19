@@ -62,26 +62,28 @@ targetX = global.cameraVar[2] - (CameraW / 2);
 targetY = global.cameraVar[3] - (CameraH / 2);
 
 cameraX += (targetX - cameraX) / cameraSpeed;
-if (cameraX < global.areaBorder[1][1] and global.cameraVar[8]) {
-	cameraX = global.areaBorder[1][1];
+var ceilAreaBorderX = ceil(global.areaBorder[1][1]);
+if (cameraX < ceilAreaBorderX and global.cameraVar[8]) {
+	cameraX = ceilAreaBorderX;
 	if (cameraX < 0) { cameraX = 0; }
 } else if (cameraX + CameraW > global.areaBorder[1][3] and global.cameraVar[8]) {
-	cameraX = global.areaBorder[1][1];
-	var areaW = global.areaBorder[1][3] - global.areaBorder[1][1];
+	cameraX = ceilAreaBorderX;
+	var areaW = floor(global.areaBorder[1][3] - global.areaBorder[1][1]);
 	if (CameraW <= areaW) {
-		cameraX = global.areaBorder[1][1] + (areaW - CameraW);
+		cameraX = ceilAreaBorderX + (areaW - CameraW);
 	}
 }
 
 cameraY += (targetY - cameraY) / cameraSpeed
-if(cameraY < global.areaBorder[1][0] and global.cameraVar[9]) {
-	cameraY = global.areaBorder[1][0];
+var ceilAreaBorderY = ceil(global.areaBorder[1][0]);
+if(cameraY < ceilAreaBorderY and global.cameraVar[9]) {
+	cameraY = ceilAreaBorderY;
 	if (cameraY < 0) { cameraY = 0; }
-} else if (cameraY + CameraH > global.areaBorder[1][2] and global.cameraVar[9]) {
-	cameraY = global.areaBorder[1][0];
-	var areaH = global.areaBorder[1][2] - global.areaBorder[1][0];
+} else if (cameraY + CameraH > ceil(global.areaBorder[1][2]) and global.cameraVar[9]) {
+	cameraY = ceilAreaBorderY;
+	var areaH = floor(global.areaBorder[1][2] - global.areaBorder[1][0]);
 	if (CameraH <= areaH) {
-		cameraY = global.areaBorder[1][0] + (areaH - CameraH);
+		cameraY = ceilAreaBorderY + (areaH - CameraH);
 	}
 }
 

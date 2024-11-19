@@ -11,14 +11,14 @@ frame = 0;
 sprite = 0;
 move = true;
 
-sprite_index = spr_player;
+sprite_index = spr_mrManD;
 function setFrame(current) {
 	//Compare the current and previous frame positions, and set the directional sprite
 	var dir = current;
 	//animation speed
 	frame += 5/60;
 	if (x = xprevious and y = yprevious) { 
-		frame = 1;
+		if (prePos) { frame = 0; }
 		prePos = false;
 	} else { 
 		if (!prePos) { frame = 0; }

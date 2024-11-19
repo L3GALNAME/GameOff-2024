@@ -5,12 +5,13 @@
     {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[18,45,41,10,29,37,4,44,25,7,33,43,54,41,45,34,],},
   ],
   "macroPageTiles":{
-    "SerialiseHeight":0,
-    "SerialiseWidth":0,
-    "TileSerialiseData":[],
+    "SerialiseHeight":9,
+    "SerialiseWidth":2,
+    "TileCompressedData":[-16,0,2,32,34,],
+    "TileDataFormat":1,
   },
   "name":"tile_house",
-  "out_columns":7,
+  "out_columns":9,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -36,5 +37,5 @@
   "tileWidth":20,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":56,
+  "tile_count":80,
 }

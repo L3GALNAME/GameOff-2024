@@ -96,6 +96,14 @@ global.text[4] = 0;
 
 room = rm_house;
 global.startPos = [100, 100];
+transition_create("basicOut", spr_pixel, rm_house, 1, 0.05, c_black);
+
+global.layers = array_create(0);
+
+global.weather = array_create(0);
+global.weather[0] = 0;
+global.weather[1] = [ 0, 0];
+global.weather[2] = [ #ffffff, #f2dd9d];
 
 //surface_resize(application_surface, 320, 180)
 

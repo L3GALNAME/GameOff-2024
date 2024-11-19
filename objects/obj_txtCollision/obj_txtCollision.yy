@@ -9,8 +9,8 @@
   "name":"obj_txtCollision",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Functional",
+    "path":"folders/Objects/Functional.yy",
   },
   "parentObjectId":{
     "name":"obj_collision",

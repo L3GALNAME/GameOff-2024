@@ -19,8 +19,13 @@
 //}
 
 thing += 2;
-//walkDir = setFrame(walkDir);
-sprite = asset_get_index("spr_player");
-//sprite = asset_get_index("spr_arachnisWalk"+walkDir)
-draw_sprite_ext(sprite, frame, x, y, 1, 1, 0, c_white, 1);
-draw_sprite(spr_feetEffect, frame % 2, x, y);
+walkDir = setFrame(walkDir);
+//sprite = asset_get_index("spr_player");
+sprite = asset_get_index("spr_mrMan"+walkDir)
+
+//layer = global.layers[0]._id;
+if (!prePos) {
+	draw_sprite_ext(sprite, (frame%16)>=8 ? 0 : frame%16, x, y, 1, 1, 0, c_white, 1);
+} else {
+	draw_sprite_ext(sprite, 8+(frame%6), x, y, 1, 1, 0, c_white, 1);
+}

@@ -23,4 +23,14 @@ walkDir = setFrame(walkDir);
 		global.areaBorder[1][2] = lerp(global.areaBorder[1][2], room_height, 0.125);
 		global.areaBorder[1][3] = lerp(global.areaBorder[1][3], room_width, 0.125);
 	}
+	
+	//for (var i=0; i<array_length(global.areaBorder[1]); i++) {
+	//	global.areaBorder[1][i] = ceil(global.areaBorder[1][i]);
+	//}
 #endregion
+
+//Room transition check
+if place_meeting(x, y, obj_roomTrans) {
+	var rmTrans = instance_place(x, y, obj_roomTrans);
+	with rmTrans { event_user(0); }
+}

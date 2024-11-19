@@ -1,16 +1,17 @@
 /// @description
 
 // Room transition animation
-if thing > 0 {
-	draw_sprite_ext(spr_pixel, 0, 0, 0, 960, 540, 0, c_black, thing);
-	thing -= 0.05;
-}
+//if thing > 0 {
+//	draw_sprite_ext(spr_pixel, 0, 0, 0, 960, 540, 0, c_black, thing);
+//	thing -= 0.05;
+//}
 
 // Debug
 
-//draw_txt(0, 0, global.text);
-//if instance_exists(obj_typer) { draw_txt(0, 16, obj_typer.txtProg); }
-//draw_text(0, 64, global.text[4])
+//draw_txt(0, 0, $"{camera_get_view_x(global.camera) + camera_get_view_width(global.camera)} {camera_get_view_y(global.camera) + camera_get_view_height(global.camera)}");
+//draw_txt(0, 16, $"{global.areaBorder[1][1]} {global.areaBorder[1][3]}");
+//if instance_exists(obj_feetEffect) { draw_txt(0, 16, obj_feetEffect.type); }
+//draw_txt(0, 0, global.layers[1]._id);
 ////draw_text(0, 48, string(global.textScript))
 //if array_length(global.textScript) > 1 {
 //	//draw_text(0, 48, obj_typer.text)
