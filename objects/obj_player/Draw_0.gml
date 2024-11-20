@@ -1,5 +1,4 @@
 /// @description Draw Player
-// You can write your code in this editor
 
 //// Scrolling Background (test purposes)
 //if (room = rm_test0 or room = rm_house) {
@@ -20,12 +19,15 @@
 
 thing += 2;
 walkDir = setFrame(walkDir);
-//sprite = asset_get_index("spr_player");
 sprite = asset_get_index("spr_mrMan"+walkDir)
 
-//layer = global.layers[0]._id;
+//Draw idle or walking animation
+var palName = floor(global.palIdx);
+global.colorMod[0].SetShaderBlend(palName, (palName+1)%4, global.palIdx-palName);
 if (!prePos) {
-	draw_sprite_ext(sprite, (frame%16)>=8 ? 0 : frame%16, x, y, 1, 1, 0, c_white, 1);
+	////Extends neutral pose
+	draw_sprite_ext(sprite, (frame%16) >= 8 ? 0 : frame%16, x, y, 1, 1, 0, c_white, 1);
 } else {
 	draw_sprite_ext(sprite, 8+(frame%6), x, y, 1, 1, 0, c_white, 1);
 }
+shader_reset();

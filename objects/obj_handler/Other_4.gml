@@ -9,7 +9,6 @@ if !instance_exists(obj_player) {
 	instance_create_layer(0, 0, "Instances", obj_typer);
 }
 
-
 global.layers = [];
 switch room {
 	case rm_house:
@@ -34,6 +33,12 @@ switch room {
 			name : "Instances_Reflect"
 		};
 		
-		global.weather[0] = 1;
+		global.weather[0] = 2;
 	break;
 }
+
+//Create tileset palette
+instance_create_depth(0, 0, 501, obj_palSetBegin);
+instance_create_depth(0, 0, 499, obj_palSetEnd);
+instance_create_depth(0, 0, 701, obj_palSetBegin);
+instance_create_depth(0, 0, 699, obj_palSetEnd);

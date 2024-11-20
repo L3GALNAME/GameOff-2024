@@ -102,8 +102,25 @@ global.layers = array_create(0);
 
 global.weather = array_create(0);
 global.weather[0] = 0;
-global.weather[1] = [ 0, 0];
-global.weather[2] = [ #ffffff, #f2dd9d];
+global.weather[1] = [ 0, 0, 0];
+global.weather[2] = [ #ffffff, #f2dd9d, #b4f5f5 ];
+
+#region palette setting
+	global.time = array_create(0);
+	//Real Time
+	global.time[0] = [0, 0];
+	//Time Offset
+	if (get_timer() > 0) { global.time[0][1] = get_timer() }
+	//In game time
+	global.time[1] = 0;
+	
+	global.palIdx = 0;
+	global.colorMod = array_create(0);
+	//Characters
+	global.colorMod[0] = ColorModFromSprite(pal_mrMan_1, 0, true);
+	//Tiles
+	global.colorMod[1] = [ColorModFromSprite(pal_houseTiles, 0, true), 1];
+#endregion
 
 //surface_resize(application_surface, 320, 180)
 

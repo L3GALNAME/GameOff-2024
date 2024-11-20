@@ -13,3 +13,5 @@
 		}
 	}
 #endregion
+
+walkSpd = 2 - (global.palIdx >= 2 and global.palIdx < 3);

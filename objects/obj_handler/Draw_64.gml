@@ -10,7 +10,9 @@
 
 //draw_txt(0, 0, $"{camera_get_view_x(global.camera) + camera_get_view_width(global.camera)} {camera_get_view_y(global.camera) + camera_get_view_height(global.camera)}");
 //draw_txt(0, 16, $"{global.areaBorder[1][1]} {global.areaBorder[1][3]}");
-//if instance_exists(obj_feetEffect) { draw_txt(0, 16, obj_feetEffect.type); }
+draw_txt(0, 0, global.time[0]);
+draw_txt(0, 16, global.time[1]);
+draw_txt(0, 32, global.palIdx);
 //draw_txt(0, 0, global.layers[1]._id);
 ////draw_text(0, 48, string(global.textScript))
 //if array_length(global.textScript) > 1 {

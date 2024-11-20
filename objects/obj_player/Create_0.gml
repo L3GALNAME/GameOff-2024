@@ -6,10 +6,14 @@ thing = 0;
 thing2 = 0;
 tick = 0;
 prePos = false;
-walkDir = "D";
+move = true;
+walkSpd = 2;
+
+//Visual
 frame = 0;
 sprite = 0;
-move = true;
+walkDir = "D";
+_palIdx = 0;
 
 sprite_index = spr_mrManD;
 function setFrame(current) {

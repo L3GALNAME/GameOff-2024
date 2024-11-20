@@ -6,8 +6,8 @@
   "name":"obj_gradient",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Visual",
+    "path":"folders/Objects/Visual.yy",
   },
   "parentObjectId":null,
   "persistent":false,

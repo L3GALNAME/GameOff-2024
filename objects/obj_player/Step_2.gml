@@ -1,7 +1,7 @@
 /// @description Movement/Collision
 // You can write your code in this editor
-moveX(move*(2*((global.ctrl[3] > 0) - (global.ctrl[1] > 0))));
-moveY(move*(2*((global.ctrl[2] > 0) - (global.ctrl[0] > 0))));
+moveX(move*(walkSpd*((global.ctrl[3] > 0) - (global.ctrl[1] > 0))));
+moveY(move*(walkSpd*((global.ctrl[2] > 0) - (global.ctrl[0] > 0))));
 walkDir = setFrame(walkDir);
 
 #region Set camera boundaries
@@ -30,7 +30,7 @@ walkDir = setFrame(walkDir);
 #endregion
 
 //Room transition check
-if place_meeting(x, y, obj_roomTrans) {
-	var rmTrans = instance_place(x, y, obj_roomTrans);
+var rmTrans = instance_place(x, y, obj_roomTrans);
+if rmTrans {
 	with rmTrans { event_user(0); }
 }
