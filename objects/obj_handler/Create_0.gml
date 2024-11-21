@@ -119,7 +119,10 @@ global.weather[2] = [ #ffffff, #f2dd9d, #b4f5f5 ];
 	//Characters
 	global.colorMod[0] = ColorModFromSprite(pal_mrMan_1, 0, true);
 	//Tiles
-	global.colorMod[1] = [ColorModFromSprite(pal_houseTiles, 0, true), 1];
+	global.colorMod[1] = [
+		ColorModFromSprite(pal_houseTiles, 0, true), 
+		ColorModFromSprite(pal_roadTiles, 0, true)
+	];
 #endregion
 
 //surface_resize(application_surface, 320, 180)

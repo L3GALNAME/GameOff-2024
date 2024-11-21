@@ -95,6 +95,9 @@ x = cameraX; y = cameraY;
 mouseXPre = device_mouse_x_to_gui(0)
 mouseYPre = device_mouse_y_to_gui(0)
 
+layer_x(global.layers[2]._id, x);
+layer_y(global.layers[2]._id, y);
+
 ////Foreground Parallax
 //var lay = array_length(foreground)
 //var floori = 0

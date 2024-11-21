@@ -5,9 +5,9 @@ for(var i=0; i<ctrlLen*2; i+=2) {
 	} else { global.ctrl[i/2] = 0; }
 }
 
-global.time[0][0] = floor((get_timer() - global.time[0][1]) / 100000);
+global.time[0][0] = floor((get_timer() - global.time[0][1]) / 1000000);
 //// Start the day at sunrise
-global.time[1] = ((108 + floor(global.time[0][0]/1)) % 144);
+global.time[1] = ((108 + floor(global.time[0][0]/0.5)) % 144);
 
 #region game time math system thingy
 	//// (6*24) = 144 (Number of in game 10 minute intervals)
@@ -26,4 +26,15 @@ global.time[1] = ((108 + floor(global.time[0][0]/1)) % 144);
 			global.palIdx > 2 ? ((4-global.palIdx)/2) : (global.palIdx/2)
 		);
 	}
+	
+	//Change background sprite
+	var palName = floor(global.palIdx);
+	var sprite = palName == 3 ? spr_background1 : asset_get_index($"spr_background{palName}");
+	//if (palName == 0) {
+	//	sprite = spr_background0;
+	//} else if (palName == 2) {
+	//	sprite = spr_background2;
+	//}
+	layer_background_change(global.layers[2].background, sprite);
+	
 #endregion

@@ -19,7 +19,7 @@
 
 thing += 2;
 walkDir = setFrame(walkDir);
-sprite = asset_get_index("spr_mrMan"+walkDir)
+sprite = asset_get_index("spr_mrMan"+walkDir);
 
 //Draw idle or walking animation
 var palName = floor(global.palIdx);

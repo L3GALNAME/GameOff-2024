@@ -20,6 +20,11 @@ switch room {
 			_id : layer_get_id("Instances_Reflect"),
 			name : "Instances_Reflect"
 		};
+		global.layers[2] = {
+			_id : layer_get_id("Background"),
+			name : "Background",
+			background: layer_background_get_id("Background")
+		};
 		
 		global.weather[0] = 1;
 	break;
@@ -31,6 +36,11 @@ switch room {
 		global.layers[1] = {
 			_id : layer_get_id("Instances_Reflect"),
 			name : "Instances_Reflect"
+		};
+		global.layers[2] = {
+			_id : layer_get_id("Background"),
+			name : "Background",
+			background: layer_background_get_id("Background")
 		};
 		
 		global.weather[0] = 2;
