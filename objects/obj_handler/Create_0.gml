@@ -26,9 +26,10 @@ thing = 0;
 	global.cameraVar[10] = true
 	global.cameraVar[11] = true
 	//offset
-	global.cameraVar[12] = 0
+	global.cameraVar[12] = [0, 0];
 	////offset real
-	global.cameraVar[13] = 0
+	global.cameraVar[13] = 0;
+	global.cameraVar[14] = 0;
 
 	global.shake = array_create(0);
 	// left/right shake switches

@@ -47,6 +47,7 @@
     {"name":"inst_489872F5","path":"rooms/rm_house/rm_house.yy",},
     {"name":"inst_25DF7EBE","path":"rooms/rm_house/rm_house.yy",},
     {"name":"inst_42873752","path":"rooms/rm_house/rm_house.yy",},
+    {"name":"inst_8A5CC37","path":"rooms/rm_house/rm_house.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -99,7 +100,9 @@
         {"$GMRInstance":"v1","%Name":"inst_2D79139D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D79139D","objectId":{"name":"obj_gradient","path":"objects/obj_gradient/obj_gradient.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":36.0,"scaleY":-0.22222227,"x":542.0,"y":540.0,},
         {"$GMRInstance":"v1","%Name":"inst_40FA84CF","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40FA84CF","objectId":{"name":"obj_gradient","path":"objects/obj_gradient/obj_gradient.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":36.0,"scaleY":-0.22222227,"x":582.0,"y":540.0,},
       ],"layers":[],"name":"Decoration","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_8A5CC37","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_8A5CC37","objectId":{"name":"obj_playerCar","path":"objects/obj_playerCar/obj_playerCar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":160.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":29,"SerialiseWidth":34,"TileCompressedData":[
           -16,0,-18,-2147483648,2,0,11,-14,12,2,43,11,-14,12,8,43,-2147483648,0,21,22,22,23,24,-4,22,42,23,24,
           22,23,24,22,44,1073741876,22,23,24,22,22,33,22,22,33,22,22,23,24,22,1879048244,-2147483648,0,30,32,34,

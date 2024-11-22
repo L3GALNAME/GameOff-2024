@@ -14,7 +14,7 @@
 //draw_txt(0, 16, $"{obj_camera.y}");
 draw_txt(0, 0, global.time[0]);
 draw_txt(0, 16, global.time[1]);
-//draw_txt(0, 32, global.palIdx);
+draw_txt(0, 32, obj_player.driving);
 //draw_txt(0, 0, global.layers[1]._id);
 ////draw_text(0, 48, string(global.textScript))
 //if array_length(global.textScript) > 1 {

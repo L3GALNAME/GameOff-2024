@@ -5,9 +5,9 @@ for(var i=0; i<ctrlLen*2; i+=2) {
 	} else { global.ctrl[i/2] = 0; }
 }
 
-global.time[0][0] = floor((get_timer() - global.time[0][1]) / 1000000);
+global.time[0][0] = floor((get_timer() - global.time[0][1]) / 100000);
 //// Start the day at sunrise
-global.time[1] = ((108 + floor(global.time[0][0]/0.5)) % 144);
+global.time[1] = ((108 + floor(global.time[0][0]/1)) % 144);
 
 #region game time math system thingy
 	//// (6*24) = 144 (Number of in game 10 minute intervals)

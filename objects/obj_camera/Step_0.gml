@@ -55,7 +55,7 @@ if global.cameraVar[4] {
 		global.cameraVar[2] = ((cameraTarget.bbox_left + cameraTarget.bbox_right)/2) + global.cameraVar[13];
 	}
 	if global.cameraVar[11] {
-		global.cameraVar[3] = (cameraTarget.bbox_top + cameraTarget.bbox_bottom)/2;
+		global.cameraVar[3] = ((cameraTarget.bbox_top + cameraTarget.bbox_bottom)/2) + global.cameraVar[14];
 	}
 }
 targetX = global.cameraVar[2] - (CameraW / 2);
