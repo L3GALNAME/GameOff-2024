@@ -1,0 +1,1 @@
+typeSay("The door is double locked.", 0, 0, 2);

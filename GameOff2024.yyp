@@ -94,6 +94,7 @@
     {"id":{"name":"__shdColorModDebug","path":"shaders/__shdColorModDebug/__shdColorModDebug.yy",},},
     {"id":{"name":"__shdColorModDebugOutput","path":"shaders/__shdColorModDebugOutput/__shdColorModDebugOutput.yy",},},
     {"id":{"name":"__sColorModPixel","path":"sprites/__sColorModPixel/__sColorModPixel.yy",},},
+    {"id":{"name":"pal_house","path":"sprites/pal_house/pal_house.yy",},},
     {"id":{"name":"pal_houseTiles","path":"sprites/pal_houseTiles/pal_houseTiles.yy",},},
     {"id":{"name":"pal_mrMan_1","path":"sprites/pal_mrMan_1/pal_mrMan_1.yy",},},
     {"id":{"name":"pal_mrMan","path":"sprites/pal_mrMan/pal_mrMan.yy",},},

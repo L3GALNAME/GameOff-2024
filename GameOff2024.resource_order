@@ -71,6 +71,7 @@
     {"name":"__shdColorModBlendDebug","order":3,"path":"shaders/__shdColorModBlendDebug/__shdColorModBlendDebug.yy",},
     {"name":"__shdColorModDebug","order":4,"path":"shaders/__shdColorModDebug/__shdColorModDebug.yy",},
     {"name":"__shdColorModDebugOutput","order":5,"path":"shaders/__shdColorModDebugOutput/__shdColorModDebugOutput.yy",},
+    {"name":"pal_house","order":4,"path":"sprites/pal_house/pal_house.yy",},
     {"name":"pal_houseTiles","order":2,"path":"sprites/pal_houseTiles/pal_houseTiles.yy",},
     {"name":"pal_mrMan_1","order":1,"path":"sprites/pal_mrMan_1/pal_mrMan_1.yy",},
     {"name":"pal_roadTiles","order":3,"path":"sprites/pal_roadTiles/pal_roadTiles.yy",},
