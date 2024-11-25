@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"shadow_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shadow_create",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -25,6 +25,14 @@ switch room {
 			name : "Background",
 			background: layer_background_get_id("Background")
 		};
+		global.layers[3] = {
+			_id : layer_get_id("Tiles_1"),
+			name : "Tiles_1"
+		};
+		global.layers[4] = {
+			_id : layer_get_id("Tiles_Reflect"),
+			name : "Tiles_Reflect"
+		};
 		
 		global.weather[0] = 1;
 	break;
@@ -42,13 +50,21 @@ switch room {
 			name : "Background",
 			background: layer_background_get_id("Background")
 		};
+		global.layers[3] = {
+			_id : layer_get_id("Tiles_1"),
+			name : "Tiles_1"
+		};
+		global.layers[4] = {
+			_id : layer_get_id("Tiles_Reflect"),
+			name : "Tiles_Reflect"
+		};
 		
 		global.weather[0] = 2;
 	break;
 }
 
 //Create tileset palette
-instance_create_depth(0, 0, 501, obj_palSetBegin);
-instance_create_depth(0, 0, 499, obj_palSetEnd);
-instance_create_depth(0, 0, 701, obj_palSetBegin);
-instance_create_depth(0, 0, 699, obj_palSetEnd);
+instance_create_depth(0, 0, layer_get_depth(global.layers[3]._id) + 1, obj_palSetBegin);
+instance_create_depth(0, 0, layer_get_depth(global.layers[3]._id) - 1, obj_palSetEnd);
+instance_create_depth(0, 0, layer_get_depth(global.layers[4]._id) + 1, obj_palSetBegin);
+instance_create_depth(0, 0, layer_get_depth(global.layers[4]._id) - 1, obj_palSetEnd);

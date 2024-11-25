@@ -1,7 +1,7 @@
 /// @description Movement/Collision
 // You can write your code in this editor
-moveX(move*(walkSpd*((global.ctrl[3] > 0) - (global.ctrl[1] > 0))));
-moveY(move*(walkSpd*((global.ctrl[2] > 0) - (global.ctrl[0] > 0))));
+moveX(move*(walkSpd*((global.ctrl[3] > 0) - (global.ctrl[1] > 0))), driving);
+moveY(move*(walkSpd*((global.ctrl[2] > 0) - (global.ctrl[0] > 0))), driving);
 walkDir = setFrame(walkDir);
 
 #region driving offset
