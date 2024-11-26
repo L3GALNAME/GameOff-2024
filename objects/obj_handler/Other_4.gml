@@ -5,8 +5,8 @@ thing = 1.05;
 if !instance_exists(obj_player) {
 	instance_create_layer(global.startPos[0], global.startPos[1], "Instances", obj_player);
 	instance_create_layer(global.startPos[0], global.startPos[1], "Instances", obj_feetEffect);
-	instance_create_layer(0, 0, "Instances", obj_camera);
-	instance_create_layer(0, 0, "Instances", obj_typer);
+	instance_create_layer(0, 0, "Top", obj_camera);
+	instance_create_layer(0, 0, "Top", obj_typer);
 }
 
 global.layers = [];

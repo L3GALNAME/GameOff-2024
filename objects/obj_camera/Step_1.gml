@@ -7,3 +7,6 @@ palIdx = 0
 //}
 
 //palIdx = 0
+if (alarm[0] <= 0) {
+	alarm[0] = 20;
+}

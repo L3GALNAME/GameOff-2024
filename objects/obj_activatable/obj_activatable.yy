@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_carCollision",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_activatable",
+  "eventList":[],
   "managed":true,
-  "name":"obj_carCollision",
+  "name":"obj_activatable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Functional",
-    "path":"folders/Objects/Functional.yy",
+    "name":"Visual",
+    "path":"folders/Objects/Visual.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_carCollision",
-    "path":"sprites/spr_carCollision/spr_carCollision.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

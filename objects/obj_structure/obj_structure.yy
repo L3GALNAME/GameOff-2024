@@ -13,7 +13,10 @@
     "name":"Visual",
     "path":"folders/Objects/Visual.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_activatable",
+    "path":"objects/obj_activatable/obj_activatable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
