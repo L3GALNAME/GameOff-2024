@@ -14,6 +14,12 @@ if instance_exists(obj_player) {
 				case 2:
 					draw_sprite_ext(_sprite, 2, x, y+2, _xScale, _yScale, image_angle, c_white, _alpha);
 				break;
+				case 3:
+					draw_sprite_ext(_sprite, ((frame*prePos) % 2)+3, x, y, _xScale, _yScale, image_angle, c_white, _alpha);
+				break;
+				case 4:
+					draw_sprite_ext(_sprite, ((frame*prePos) % 2)+5, x, y, _xScale, _yScale, image_angle, c_white, _alpha);
+				break;
 			}
 		} else {
 			if (!prePos) {

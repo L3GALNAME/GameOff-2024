@@ -26,6 +26,7 @@
 			}
 		} else {
 			car.sprite = sprite;
+			car.depth = depth + 1;
 			car = undefined;
 			driving = false;
 		}
@@ -36,5 +37,5 @@
 if driving {
 	walkSpd = 8;
 } else {
-	walkSpd = 2 - (global.palIdx >= 2 and global.palIdx < 3);
+	walkSpd = 2 / (1 + (global.palIdx >= 2 and global.palIdx < 3));
 }

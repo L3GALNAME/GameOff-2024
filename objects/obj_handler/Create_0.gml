@@ -127,6 +127,8 @@ global.weather[2] = [ #ffffff, #f2dd9d, #b4f5f5 ];
 	//Buildings
 	global.colorMod[2] = [
 		ColorModFromSprite(pal_house, 0, true), 
+		ColorModFromSprite(pal_baldHouse, 0, true), 
+		ColorModFromSprite(pal_gravestone, 0, true)
 	];
 #endregion
 
