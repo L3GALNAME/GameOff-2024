@@ -2,6 +2,15 @@
 //cameraSpeed = 4
 //cameraTarget = global.cameraVar[5]
 
+//Positioning
+var targetX = global.startPos[0] - (cameraW / 2);
+var targetY = global.startPos[1] - (cameraH / 2);
+x = targetX;
+y = targetY;
+
+camera_set_view_pos(global.camera, x, y);
+
+
 Scale = 1
 ScaleTime = 1
 preScale = 0
