@@ -95,8 +95,9 @@ global.text[3] = array_create(0);
 ///text lines	
 global.text[4] = 0;
 
-room = rm_outdoors;
-global.startPos = [1020, 920];
+room = rm_house;
+//global.startPos = [1020, 920];
+global.startPos = [60, 100];
 transition_create("basicOut", spr_pixel, rm_house, 1, 0.05, c_black);
 
 global.layers = array_create(0);
@@ -130,7 +131,8 @@ global.weather[2] = [ #ffffff, #f2dd9d, #b4f5f5 ];
 		ColorModFromSprite(pal_baldHouse, 0, true), 
 		ColorModFromSprite(pal_gravestone, 0, true), 
 		ColorModFromSprite(pal_coffeeShop, 0, true), 
-		ColorModFromSprite(pal_gasStation, 0, true)
+		ColorModFromSprite(pal_gasStation, 0, true), 
+		ColorModFromSprite(pal_donutShop, 0, true)
 	];
 #endregion
 
